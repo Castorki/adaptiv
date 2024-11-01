@@ -169,3 +169,72 @@ body {
   color: #f26376;
   padding: 14px 39px 15px;
 }
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+
+  .rightside {
+    gap: 0;
+  }
+
+  .profi {
+    margin-left: 25px;
+    margin-right: 42px;
+  }
+
+  .top__contetn {
+    gap: 80px;
+  }
+
+  .brand__photo {
+    width: 260px;
+  }
+
+  .heading {
+    padding-top: 139px;
+    padding-bottom: 138px;
+    gap: 16px;
+  }
+
+  .brand {
+    font-size: 44px;
+    line-height: 53px;
+  }
+
+  .luxuri {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .category {
+    margin-bottom: 110px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 233px);
+  }
+
+  .item {
+    width: 233px;
+  }
+
+  .item__big {
+    width: 740px;
+  }
+
+  .products__heading {
+    margin-bottom: 73px;
+  }
+
+  .products__list {
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+  }
+
+  .list__button {
+    margin-top: 33px;
+    margin-bottom: 71px;
+  }
+}
