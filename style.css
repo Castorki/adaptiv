@@ -88,6 +88,10 @@ img {
   gap: 30px;
 }
 
+.item__big {
+  grid-column: span 3;
+}
+
 .products__heading {
   margin-bottom: 48px;
   display: flex;
