@@ -187,6 +187,199 @@ img {
   color: #222222;
 }
 
+.cart {
+  display: flex;
+  gap: 128px;
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+.cart__products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 652px;
+}
+.cart__products .product__card {
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  display: flex;
+}
+.cart__products .product__card__inform {
+  display: flex;
+  padding: 22px 22px 62px 31px;
+  background: #FFFFFF;
+  gap: 57px;
+}
+.cart__products .product__card__description {
+  gap: 42px;
+  display: flex;
+  flex-direction: column;
+}
+.cart__products .product__card__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+.cart__products .product__card__tags {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+.cart__products .product__card .color__price {
+  color: #F16D7F;
+}
+.cart__products .product__card .quantity {
+  border: 1px solid #EAEAEA;
+  padding: 2px 17px;
+  margin-left: 24px;
+}
+.cart__buttons__container {
+  display: flex;
+  gap: 186px;
+  margin-top: 72px;
+}
+.cart__button {
+  transition: background-color 1s ease-in-out;
+  background-color: #fff;
+  padding: 17px 41px 16px 39px;
+  border: 1px solid #000;
+}
+.cart__button__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.cart__button:hover {
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+}
+.cart__button:hover .cart__button__text {
+  color: #fff;
+}
+.cart .delivery__form {
+  gap: 21px;
+  display: flex;
+  flex-direction: column;
+}
+.cart .delivery__form .form__heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.cart .delivery__form .input__field {
+  border: 1px solid #000;
+  width: 360px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 18px;
+}
+.cart .delivery__form .city__name::-moz-placeholder {
+  opacity: 0.5;
+}
+.cart .delivery__form .city__name::placeholder {
+  opacity: 0.5;
+}
+.cart .delivery__form .input__field::-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+.cart .delivery__form .input__field::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+.cart .delivery__form .form__button {
+  transition: background-color 1s ease-in-out;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 10px 15px 12px 16px;
+  max-width: 107px;
+}
+.cart .delivery__form .form__button__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+.cart .delivery__form .form__button:hover {
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+}
+.cart .delivery__form .form__button:hover .form__button__text {
+  color: #fff;
+}
+.cart .total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 57px;
+  padding: 39px 34px 42px 44px;
+  background: #F5F3F3;
+}
+.cart .total .sub__total {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+.cart .total .grand__total {
+  padding-top: 12px;
+  padding-bottom: 21px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.cart .total .grand__total__price {
+  font-weight: 700;
+  color: #F16D7F;
+}
+.cart .total .border {
+  width: 273px;
+  border: 1px solid #E2E2E2;
+}
+.cart .total__button {
+  transition: background-color 1s ease-in-out;
+  margin-top: 17px;
+  border: none;
+  background: #F16D7F;
+  padding: 15px 43px 16px 41px;
+}
+.cart .total__button__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.cart .total__button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.cart .total__button:hover .total__button__text {
+  color: #000;
+}
+
 .main__product__info {
   border: 1px solid #EAEAEA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

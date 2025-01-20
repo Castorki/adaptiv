@@ -220,6 +220,228 @@ img {
     }
 }
 
+.cart {
+    display: flex;
+    gap: 128px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 652px;
+
+        .product__card {
+            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+
+            display: flex;
+
+            &__inform {
+                display: flex;
+                padding: 22px 22px 62px 31px;
+                background: #FFFFFF;
+                gap: 57px;
+            }
+
+            &__description {
+                gap: 42px;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__name {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #222222;
+            }
+
+            &__tags {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+            }
+
+            .color__price {
+                color: $selectSiteColor;
+            }
+
+            .quantity {
+                border: 1px solid #EAEAEA;
+                padding: 2px 17px;
+                margin-left: 24px;
+            }
+        }
+    }
+
+    &__buttons__container {
+        display: flex;
+        gap: 186px;
+        margin-top: 72px;
+    }
+
+    &__button {
+        transition: background-color 1s ease-in-out;
+        background-color: #fff;
+        padding: 17px 41px 16px 39px;
+        border: 1px solid #000;
+
+        &__text {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+
+    &__button:hover {
+        background-color: $selectSiteColor;
+        border-color: $selectSiteColor;
+    }
+
+    &__button:hover .cart__button__text {
+        color: #fff;
+
+    }
+
+    .delivery__form {
+        gap: 21px;
+        display: flex;
+        flex-direction: column;
+
+        .form__heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        .input__field {
+            border: 1px solid #000;
+            width: 360px;
+            padding-top: 13px;
+            padding-bottom: 16px;
+            padding-left: 18px;
+        }
+
+        .city__name::placeholder {
+            opacity: 0.5;
+        }
+
+        .input__field::placeholder {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #222222;
+
+        }
+
+        .form__button {
+            transition: background-color 1s ease-in-out;
+            border: 1px solid #000;
+            background-color: #fff;
+            padding: 10px 15px 12px 16px;
+            max-width: 107px;
+
+            &__text {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+            }
+        }
+
+
+
+        .form__button:hover {
+            background-color: $selectSiteColor;
+            border-color: $selectSiteColor;
+        }
+
+        .form__button:hover .form__button__text {
+            color: #fff;
+
+        }
+    }
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 57px;
+        padding: 39px 34px 42px 44px;
+        background: #F5F3F3;
+
+        .sub__total {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+        }
+
+        .grand__total {
+            padding-top: 12px;
+            padding-bottom: 21px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+
+            &__price {
+                font-weight: 700;
+                color: $selectSiteColor;
+            }
+        }
+
+        .border {
+            width: 273px;
+            border: 1px solid #E2E2E2;
+
+        }
+
+        &__button {
+            transition: background-color 1s ease-in-out;
+            margin-top: 17px;
+            border: none;
+            background: $selectSiteColor;
+            padding: 15px 43px 16px 41px;
+
+            &__text {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+        }
+
+        &__button:hover {
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        &__button:hover .total__button__text {
+            color: #000;
+
+        }
+    }
+}
+
 .main__product__info {
     border: 1px solid #EAEAEA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
