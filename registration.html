@@ -68,71 +68,52 @@
             </nav>
         </header>
         <div class="main__product__heading center">
-            <h2 class="left__title">SHOPPING CART </h2>
+            <h2 class="left__title">REGISTRATION </h2>
         </div>
     </div>
-    <main class="cart center">
-        <div class="left__cart__side">
-            <div class="cart__products">
-                <div class="product__card">
-                    <img src="img/cart__photo1.png" alt="product">
-                    <div class="product__card__inform">
-                        <div class="product__card__description">
-                            <h2 class="product__card__name">MANGO PEOPLE <br>
-                                T-SHIRT</h2>
-                            <div class="product__card__info">
-                                <p class="product__card__tags">Price: <span class="color__price">$300</span> </p>
-                                <p class="product__card__tags">Color: Red</p>
-
-                                <p class="product__card__tags">Size: Xl </p>
-                                <p class="product__card__tags">Quantity: <span class="quantity">2</span></p>
-                            </div>
-                        </div>
-                        <p class="close">
-                            &#10006;
-                        </p>
-                    </div>
-                </div>
-                <div class="product__card">
-                    <img src="img/cart__photo2.png" alt="product">
-                    <div class="product__card__inform">
-                        <div class="product__card__description">
-                            <h2 class="product__card__name">MANGO PEOPLE <br> T-SHIRT</h2>
-                            <div class="product__card__info">
-                                <p class="product__card__tags">Price: <span class="color__price">$300</span> </p>
-                                <p class="product__card__tags">Color: Red</p>
-
-                                <p class="product__card__tags">Size: Xl </p>
-                                <p class="product__card__tags">Quantity: <span class="quantity">2</span></p>
-                            </div>
-                        </div>
-                        <p class="close">
-                            &#10006;
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="cart__buttons__container">
-                <button class="cart__button"><span class="cart__button__text">CLEAR SHOPPING CART</span></button>
-                <button class="cart__button"><span class="cart__button__text">CONTINUE SHOPPING</span></button>
-            </div>
-        </div>
-        <div class="rght__cart__side">
-            <div class="adrees__form">
-                <form action="#" class="delivery__form">
-                    <h2 class="form__heading">SHIPPING ADRESS</h2>
-                    <input type="text" class="input__field city__name" placeholder="Bangladesh">
-                    <input type="text" class="input__field" placeholder="State">
-                    <input type="number" class="input__field" placeholder="Postcode / Zip">
-                    <button class="form__button"><span class="form__button__text">GET A QUOTE</span></button>
+    <main class="registration center">
+        <div class="dateField">
+            <div class="dateField__userName">
+                <h2 class="dateField__userName_heading">Your Name</h2>
+                <form class="dateField__userName_nameFormFiled" action="#">
+                    <input class="dateField__userName_nameInput" type="text" placeholder="First Name">
+                    <input class="dateField__userName_nameInput" type="text" placeholder="Last Name">
                 </form>
             </div>
-            <div class="total">
-                <p class="sub__total">SUB TOTAL &emsp; <span class="sub__total__price">$900</span> </p>
-                <p class="grand__total">GRAND TOTAL &emsp;<span class="grand__total__price">$900</span></p>
-                <div class="border"></div>
-                <button class="total__button"><span class="total__button__text">PROCEED TO CHECKOUT</span></button>
+            <div class="dateField__userGender">
+                <input class="dateField__userGender_gender" type="checkbox" id="maleCheckbox">
+                <label class="genderCheckbox__text" for="maleCheckbox">Male</label>
+                <input class="dateField__userGender_gender" type="checkbox" id="femaleCheckbox">
+                <label class="genderCheckbox__text" for="femaleCheckbox">Female</label>
+                <input class="dateField__userGender_gender" type="checkbox" id="otherCheckbox">
+                <label class="genderCheckbox__text" for="otherCheckbox">Other</label>
             </div>
+            <div class="dateField__userLogin">
+                <h2 class="dateField__userLogin_heading">Login details</h2>
+                <form class="loginForm" action="#">
+                    <input type="email" class="dateField__userLogin_input" placeholder="Email">
+                    <input type="password" class="dateField__userLogin_input" placeholder="Password">
+                </form>
+            </div>
+            <p class="dateField__text">
+                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+            </p>
+            <button class="dateField__button">
+                <span class="dateField__button_text">JOIN NOW &rarr;</span>
+            </button>
+        </div>
+        <div class="loalty">
+            <h2 class="loalty__heading">LOYALTY HAS ITS PERKS</h2>
+            <p class="loalty__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+                Starting with these as soon as you join:</p>
+            <ul class="loalty__list">
+                <li class="loalty__list_element">15% off welcome offer</li>
+                <li class="loalty__list_element">Free shipping, returns and exchanges on all orders
+                </li>
+                <li class="loalty__list_element">$10 off a purchase on your birthday</li>
+                <li class="loalty__list_element">Early access to products</li>
+                <li class="loalty__list_element">Exclusive offers & rewards</li>
+            </ul>
         </div>
     </main>
     <article class="subscribe center">

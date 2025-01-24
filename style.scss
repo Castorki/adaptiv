@@ -442,6 +442,203 @@ img {
     }
 }
 
+.registration {
+    display: flex;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    .dateField {
+        &__userName {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &_nameFormFiled {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &_heading {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            &_nameInput {
+                border: 1px solid #A4A4A4;
+                padding-top: 13px;
+                padding-bottom: 16px;
+                padding-left: 18px;
+            }
+
+            &_nameInput::placeholder {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+
+        &__userGender {
+            display: flex;
+            padding-top: 31px;
+            padding-bottom: 33px;
+
+            &_gender {
+                display: none;
+            }
+
+            .genderCheckbox__text {
+                gap: 10px;
+                padding-right: 20px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                color: #000000;
+            }
+
+            .genderCheckbox__text::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border: 1px solid #A4A4A4;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-color: #fff;
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            .dateField__userGender_gender:checked+.genderCheckbox__text::before {
+                background-color: #0cbeef;
+                border-color: #0953e7;
+            }
+        }
+
+        &__userLogin {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 15px;
+
+            &_heading {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            .loginForm {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &_input {
+                border: 1px solid #A4A4A4;
+                padding-top: 13px;
+                padding-bottom: 16px;
+                padding-left: 18px;
+            }
+
+
+            &_input::placeholder {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+
+        &__button {
+            transition: background-color 1s ease-in-out;
+            margin-top: 39px;
+            display: flex;
+            align-items: center;
+            border: 1px solid $selectSiteColor;
+            background-color: $selectSiteColor;
+            padding: 16px 29px 20px 29px;
+
+            &_text {
+                font-family: 'Lato', serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+
+        &__button:hover {
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        &__button:hover .dateField__button_text {
+            color: #000;
+
+        }
+
+    }
+
+    .loalty {
+        &__heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__text {
+            margin-top: 22px;
+            margin-bottom: 21px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__list {
+
+            list-style-image: url(img/list_marker.png);
+            list-style-position: inside;
+
+            &_element {
+                margin-bottom: 16px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+        }
+    }
+}
+
 .main__product__info {
     border: 1px solid #EAEAEA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -518,23 +715,36 @@ img {
         }
     }
 
-    .add__to__cart__button {
-        margin-top: 48px;
-        margin-bottom: 65px;
-        gap: 23px;
-        width: 139px;
-        height: 44px;
-        border: 1px solid $selectSiteColor;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .main__product__button__container {
+        .main__product_button {
+            transition: background-color 1s ease-in-out;
+            margin-top: 48px;
+            margin-bottom: 65px;
+            padding: 16px 57px 12px 24px;
+            background-color: #fff;
+            border: 1px solid $selectSiteColor;
+        }
 
-        .add {
+        .main__product_button_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 17px;
             color: $selectSiteColor;
+        }
+
+        .main__product_button:hover {
+            background-color: $selectSiteColor;
+            border: 1px solid $selectSiteColor;
+        }
+
+        .main__product_button:hover .main__product_button_text {
+            color: #fff;
+            fill: #fff;
         }
     }
 }
@@ -848,6 +1058,7 @@ img {
     flex-wrap: wrap;
 
     .button {
+        transition: background-color 1s ease-in-out;
         background: none;
         border: 1px solid #ff6a6a;
         font-style: normal;
