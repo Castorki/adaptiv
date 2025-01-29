@@ -41,7 +41,7 @@ img {
 
     position: relative;
 
-    .header {
+    &__header {
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
@@ -68,10 +68,6 @@ img {
 
             .hidden__menu {
                 display: flex;
-
-                .menu {
-                    width: 40px;
-                }
 
                 .floating__menu {
                     list-style: none;
@@ -181,7 +177,7 @@ img {
     }
 
 
-    .top__contetn {
+    &__contetn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -216,425 +212,6 @@ img {
             font-size: 32px;
             line-height: 38px;
             color: #222222;
-        }
-    }
-}
-
-.cart {
-    display: flex;
-    gap: 128px;
-    padding-top: 96px;
-    padding-bottom: 128px;
-
-    &__products {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        width: 652px;
-
-        .product__card {
-            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-
-            display: flex;
-
-            &__inform {
-                display: flex;
-                padding: 22px 22px 62px 31px;
-                background: #FFFFFF;
-                gap: 57px;
-            }
-
-            &__description {
-                gap: 42px;
-
-                display: flex;
-                flex-direction: column;
-            }
-
-            &__name {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
-                color: #222222;
-            }
-
-            &__tags {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 22px;
-                line-height: 26px;
-                color: #575757;
-            }
-
-            .color__price {
-                color: $selectSiteColor;
-            }
-
-            .quantity {
-                border: 1px solid #EAEAEA;
-                padding: 2px 17px;
-                margin-left: 24px;
-            }
-        }
-    }
-
-    &__buttons__container {
-        display: flex;
-        gap: 186px;
-        margin-top: 72px;
-    }
-
-    &__button {
-        transition: background-color 1s ease-in-out;
-        background-color: #fff;
-        padding: 17px 41px 16px 39px;
-        border: 1px solid #000;
-
-        &__text {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 17px;
-            color: #000000;
-        }
-    }
-
-    &__button:hover {
-        background-color: $selectSiteColor;
-        border-color: $selectSiteColor;
-    }
-
-    &__button:hover .cart__button__text {
-        color: #fff;
-
-    }
-
-    .delivery__form {
-        gap: 21px;
-        display: flex;
-        flex-direction: column;
-
-        .form__heading {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-            color: #222222;
-        }
-
-        .input__field {
-            border: 1px solid #000;
-            width: 360px;
-            padding-top: 13px;
-            padding-bottom: 16px;
-            padding-left: 18px;
-        }
-
-        .city__name::placeholder {
-            opacity: 0.5;
-        }
-
-        .input__field::placeholder {
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 13px;
-            line-height: 16px;
-            color: #222222;
-
-        }
-
-        .form__button {
-            transition: background-color 1s ease-in-out;
-            border: 1px solid #000;
-            background-color: #fff;
-            padding: 10px 15px 12px 16px;
-            max-width: 107px;
-
-            &__text {
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 11px;
-                line-height: 13px;
-                color: #4A4A4A;
-            }
-        }
-
-
-
-        .form__button:hover {
-            background-color: $selectSiteColor;
-            border-color: $selectSiteColor;
-        }
-
-        .form__button:hover .form__button__text {
-            color: #fff;
-
-        }
-    }
-
-    .total {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 57px;
-        padding: 39px 34px 42px 44px;
-        background: #F5F3F3;
-
-        .sub__total {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 13px;
-            color: #4A4A4A;
-        }
-
-        .grand__total {
-            padding-top: 12px;
-            padding-bottom: 21px;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-            color: #222222;
-
-            &__price {
-                font-weight: 700;
-                color: $selectSiteColor;
-            }
-        }
-
-        .border {
-            width: 273px;
-            border: 1px solid #E2E2E2;
-
-        }
-
-        &__button {
-            transition: background-color 1s ease-in-out;
-            margin-top: 17px;
-            border: none;
-            background: $selectSiteColor;
-            padding: 15px 43px 16px 41px;
-
-            &__text {
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
-                color: #FFFFFF;
-            }
-        }
-
-        &__button:hover {
-            background-color: #fff;
-            border: 1px solid #000;
-        }
-
-        &__button:hover .total__button__text {
-            color: #000;
-
-        }
-    }
-}
-
-.registration {
-    display: flex;
-    gap: 128px;
-    padding-top: 64px;
-    padding-bottom: 96px;
-
-    .dateField {
-        &__userName {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            &_nameFormFiled {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            &_heading {
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
-                color: #222222;
-            }
-
-            &_nameInput {
-                border: 1px solid #A4A4A4;
-                padding-top: 13px;
-                padding-bottom: 16px;
-                padding-left: 18px;
-            }
-
-            &_nameInput::placeholder {
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 16px;
-                color: #B1B1B1;
-            }
-        }
-
-        &__userGender {
-            display: flex;
-            padding-top: 31px;
-            padding-bottom: 33px;
-
-            &_gender {
-                display: none;
-            }
-
-            .genderCheckbox__text {
-                gap: 10px;
-                padding-right: 20px;
-                position: relative;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 13px;
-                color: #000000;
-            }
-
-            .genderCheckbox__text::before {
-                content: '';
-                display: inline-block;
-                width: 16px;
-                height: 16px;
-                border: 1px solid #A4A4A4;
-                border-radius: 50%;
-                box-sizing: border-box;
-                background-color: #fff;
-                transition: background-color 0.3s, border-color 0.3s;
-            }
-
-            .dateField__userGender_gender:checked+.genderCheckbox__text::before {
-                background-color: #0cbeef;
-                border-color: #0953e7;
-            }
-        }
-
-        &__userLogin {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding-bottom: 15px;
-
-            &_heading {
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
-                color: #222222;
-            }
-
-            .loginForm {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            &_input {
-                border: 1px solid #A4A4A4;
-                padding-top: 13px;
-                padding-bottom: 16px;
-                padding-left: 18px;
-            }
-
-
-            &_input::placeholder {
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 16px;
-                color: #B1B1B1;
-            }
-        }
-
-        &__text {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 16px;
-            color: #B1B1B1;
-        }
-
-        &__button {
-            transition: background-color 1s ease-in-out;
-            margin-top: 39px;
-            display: flex;
-            align-items: center;
-            border: 1px solid $selectSiteColor;
-            background-color: $selectSiteColor;
-            padding: 16px 29px 20px 29px;
-
-            &_text {
-                font-family: 'Lato', serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 17px;
-                color: #FFFFFF;
-            }
-        }
-
-        &__button:hover {
-            background-color: #fff;
-            border: 1px solid #000;
-        }
-
-        &__button:hover .dateField__button_text {
-            color: #000;
-
-        }
-
-    }
-
-    .loalty {
-        &__heading {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
-        }
-
-        &__text {
-            margin-top: 22px;
-            margin-bottom: 21px;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 29px;
-            color: #000000;
-        }
-
-        &__list {
-
-            list-style-image: url(img/list_marker.png);
-            list-style-position: inside;
-
-            &_element {
-                margin-bottom: 16px;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 29px;
-                color: #000000;
-            }
         }
     }
 }
@@ -748,6 +325,426 @@ img {
         }
     }
 }
+
+.cart {
+    display: flex;
+    gap: 128px;
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        min-width: 652px;
+
+        .product__card {
+            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+
+            display: flex;
+
+            &__inform {
+                display: flex;
+                padding: 22px 97px 62px 31px;
+                background: #FFFFFF;
+                gap: 57px;
+            }
+
+            &__description {
+                gap: 42px;
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__name {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #222222;
+            }
+
+            &__tags {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+            }
+
+            .color__price {
+                color: $selectSiteColor;
+            }
+
+            .quantity {
+                border: 1px solid #EAEAEA;
+                padding: 2px 17px;
+                margin-left: 24px;
+            }
+        }
+    }
+
+    &__buttons__container {
+        display: flex;
+        gap: 186px;
+        margin-top: 72px;
+    }
+
+    &__button {
+        transition: background-color 1s ease-in-out;
+        background-color: #fff;
+        padding: 17px 41px 16px 39px;
+        border: 1px solid #000;
+
+        &__text {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+
+    &__button:hover {
+        background-color: $selectSiteColor;
+        border-color: $selectSiteColor;
+    }
+
+    &__button:hover .cart__button__text {
+        color: #fff;
+
+    }
+
+    .delivery__form {
+        gap: 21px;
+        display: flex;
+        flex-direction: column;
+
+        .form__heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        .input__field {
+            border: 1px solid #000;
+            width: 342px;
+            padding-top: 13px;
+            padding-bottom: 16px;
+            padding-left: 18px;
+        }
+
+        .city__name::placeholder {
+            opacity: 0.5;
+        }
+
+        .input__field::placeholder {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #222222;
+
+        }
+
+        .form__button {
+            transition: background-color 1s ease-in-out;
+            border: 1px solid #000;
+            background-color: #fff;
+            padding: 10px 15px 12px 16px;
+            width: 107px;
+
+            &__text {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+            }
+        }
+
+
+
+        .form__button:hover {
+            background-color: $selectSiteColor;
+            border-color: $selectSiteColor;
+        }
+
+        .form__button:hover .form__button__text {
+            color: #fff;
+
+        }
+    }
+
+    .total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 57px;
+        padding: 39px 34px 42px 44px;
+        background: #F5F3F3;
+
+        .sub__total {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+        }
+
+        .grand__total {
+            padding-top: 12px;
+            padding-bottom: 21px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+
+            &__price {
+                font-weight: 700;
+                color: $selectSiteColor;
+            }
+        }
+
+        .border {
+            width: 273px;
+            border: 1px solid #E2E2E2;
+
+        }
+
+        &__button {
+            transition: background-color 1s ease-in-out;
+            margin-top: 17px;
+            border: none;
+            background: $selectSiteColor;
+            padding: 15px 43px 16px 41px;
+
+            &__text {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+        }
+
+        &__button:hover {
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        &__button:hover .total__button__text {
+            color: #000;
+
+        }
+    }
+}
+
+.registration {
+    display: flex;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    .dateField {
+        &__userRegistration {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-bottom: 15px;
+
+            &_nameFormFiled {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &_heading {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            &_nameInput {
+                border: 1px solid #A4A4A4;
+                padding-top: 13px;
+                padding-bottom: 16px;
+                padding-left: 18px;
+            }
+
+            &_nameInput::placeholder {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+
+            &_gender {
+                display: none;
+            }
+
+            .genderCheckbox__text {
+                gap: 10px;
+                padding-right: 20px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #000000;
+            }
+
+            .genderCheckbox__text::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border: 1px solid #A4A4A4;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-color: #fff;
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            .dateField__userRegistration_gender:checked+.genderCheckbox__text::before {
+                background-color: #0cbeef;
+                border-color: #0953e7;
+            }
+
+            &_heading {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            .loginForm {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            &_input {
+                border: 1px solid #A4A4A4;
+                padding-top: 13px;
+                padding-bottom: 16px;
+                padding-left: 18px;
+            }
+
+
+            &_input::placeholder {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+
+        &__userLogin {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+
+        &__button {
+            transition: background-color 1s ease-in-out;
+            margin-top: 39px;
+            display: flex;
+            align-items: center;
+            border: 1px solid $selectSiteColor;
+            background-color: $selectSiteColor;
+            padding: 16px 29px 20px 29px;
+
+            &_text {
+                font-family: 'Lato', serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+
+        &__button:hover {
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        &__button:hover .dateField__button_text {
+            color: #000;
+
+        }
+
+    }
+
+    .loalty {
+        &__heading {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__text {
+            margin-top: 22px;
+            margin-bottom: 21px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__list {
+
+            list-style-image: url(img/list_marker.png);
+            list-style-position: inside;
+
+            &_element {
+                margin-bottom: 16px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+
+
+
 
 .filter__sort {
     display: flex;
@@ -940,6 +937,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 360px);
     gap: 30px;
+    padding-bottom: 48px;
 
     .product {
         background: #f8f8f8;
@@ -1050,7 +1048,7 @@ img {
 }
 
 .list__button {
-    margin-top: 48px;
+
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
@@ -1150,7 +1148,7 @@ img {
     align-items: center;
     flex-flow: column wrap;
 
-    .application__big__heading {
+    &__big__heading {
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -1159,7 +1157,7 @@ img {
         color: #222224;
     }
 
-    .application__heading {
+    &__heading {
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -1168,7 +1166,7 @@ img {
         color: #222224;
     }
 
-    .application__button {
+    &__button {
         margin-top: 32px;
         display: flex;
         flex-direction: row;
@@ -1243,24 +1241,28 @@ img {
         padding-right: calc(50% - 368px);
     }
 
-    .rightside {
-        gap: 0;
+    .top__header .rightside {
+        gap: 40px;
     }
 
-    .floating__menu {
+    .top .main__product__heading .left__title {
+        padding-top: 59px;
+    }
+
+    .top__header .rightside .hidden__menu .floating__menu {
         padding-right: 45px;
         max-height: 385px;
     }
 
-    .menu__heading {
+    .top__header .rightside .hidden__menu .floating__menu .menu__heading {
         line-height: 5px;
     }
 
-    .category__heading {
+    .top__header .rightside .hidden__menu .floating__menu .category__heading {
         line-height: 7px;
     }
 
-    .category__link {
+    .top__header .rightside .hidden__menu .floating__menu .category__link {
         line-height: 10px;
     }
 
@@ -1270,27 +1272,110 @@ img {
     }
 
     .top__contetn {
-        gap: 80px;
+        gap: 40px;
+
+        .brand__photo {
+            width: 260px;
+        }
+
+        .heading {
+            padding-top: 139px;
+            padding-bottom: 138px;
+            gap: 16px;
+        }
+
+        .brand {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        .luxuri {
+            font-size: 24px;
+            line-height: 29px;
+        }
     }
 
-    .brand__photo {
-        width: 260px;
+    .registration {
+
+        gap: 22px;
+        padding-top: 40px;
+
+        .loalty__heading {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .loalty__text {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .loalty__list_element {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .dateField__button {
+            padding-bottom: 17px;
+        }
     }
 
-    .heading {
-        padding-top: 139px;
-        padding-bottom: 138px;
-        gap: 16px;
+    .cart {
+        flex-direction: column;
+
+        &__products {
+            gap: 64px;
+        }
+
+        &__buttons__container {
+            gap: 48px;
+        }
+
+        .total {
+            margin-top: 0;
+            padding-bottom: 41px;
+            padding-left: 53px;
+
+            .border {
+                width: 273px;
+            }
+        }
+
+        .cart__buttons__container {
+            justify-content: center;
+        }
+
+        .rght__cart__side {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
     }
 
-    .brand {
-        font-size: 44px;
-        line-height: 53px;
+    .cart__products .product__card__inform {
+        padding-right: 179px;
     }
 
-    .luxuri {
-        font-size: 24px;
-        line-height: 29px;
+    .filter__sort {
+        justify-content: space-between;
+
+        .sort__container {
+            width: auto;
+        }
+    }
+
+    .main__product__info {
+        padding-right: 63px;
+        padding-left: 63px;
+        bottom: 5px;
+    }
+
+    .top .previes {
+        top: 186px;
+    }
+
+    .top .next {
+        top: 186px;
     }
 
     .category {
@@ -1307,6 +1392,12 @@ img {
     .products__list {
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
+
+
+    }
+
+    .product3 {
+        display: none;
     }
 
     .list__button {
@@ -1325,7 +1416,7 @@ img {
         align-items: center;
     }
 
-    .block {
+    .our__strengths .block {
         max-width: 360px;
     }
 
@@ -1369,13 +1460,15 @@ img {
         display: grid;
         grid-template-columns: repeat(1, 344px);
         gap: 32px;
+
+        .item__big {
+            height: 111px;
+            object-fit: cover;
+            grid-column: span 1;
+        }
     }
 
-    .item__big {
-        height: 111px;
-        object-fit: cover;
-        grid-column: span 1;
-    }
+
 
     .products__list {
         margin-top: 65px;
@@ -1395,13 +1488,15 @@ img {
         padding-bottom: 81px;
         background: #222224;
         gap: 47px;
+
+        .strength__heading {
+            margin-top: 19px;
+            margin-bottom: 15px;
+            font-style: normal;
+        }
     }
 
-    .strength__heading {
-        margin-top: 19px;
-        margin-bottom: 15px;
-        font-style: normal;
-    }
+
 
     .subscribe {
         padding-top: 64px;
@@ -1409,7 +1504,7 @@ img {
         gap: 59px;
     }
 
-    .quot__info {
+    .our__quot .quot__info {
         font-size: 18px;
         line-height: 22px;
     }
@@ -1420,37 +1515,44 @@ img {
         margin-bottom: 0;
     }
 
-    .application__big__heading {
-        line-height: 153.2%;
+    .application {
+        &__big__heading {
+            line-height: 153.2%;
+        }
+
+        &__heading {
+            font-size: 14px;
+            line-height: 153.2%;
+        }
+
+        &__button {
+            margin-top: 22px;
+
+            .email__button {
+                width: 180px;
+                padding: 18px 22px;
+            }
+        }
     }
 
-    .application__heading {
-        font-size: 14px;
-        line-height: 153.2%;
-    }
 
-    .application__button {
-        margin-top: 22px;
-    }
 
-    .email__button {
-        width: 180px;
-        padding: 18px 22px;
-    }
 
     .footer {
         display: flex;
         flex-direction: column-reverse;
+
+        .copyright {
+            margin-bottom: 9px;
+        }
+
+        .contacts {
+            margin-top: 43px;
+            margin-bottom: 40px;
+        }
     }
 
-    .copyright {
-        margin-bottom: 9px;
-    }
 
-    .contacts {
-        margin-top: 43px;
-        margin-bottom: 40px;
-    }
 }
 
 @media (max-width: 320px) {
@@ -1459,7 +1561,7 @@ img {
         padding-right: calc(50% - 162px);
     }
 
-    .header {
+    .top__header {
         justify-content: space-around;
     }
 
@@ -1468,7 +1570,7 @@ img {
         justify-content: center;
     }
 
-    .subtitel {
+    .products__heading .subtitel {
         font-size: 13px;
     }
 

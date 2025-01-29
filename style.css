@@ -34,36 +34,33 @@ img {
 .top {
   position: relative;
 }
-.top .header {
+.top__header {
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
   background: #222222;
 }
-.top .header .leftside {
+.top__header .leftside {
   padding-top: 18px;
   padding-bottom: 19px;
   display: flex;
   gap: 41px;
 }
-.top .header .rightside {
+.top__header .rightside {
   padding-top: 26px;
   padding-bottom: 20px;
   display: flex;
   gap: 33px;
 }
-.top .header .rightside .hidden__menu:hover .floating__menu,
-.top .header .rightside .floating__menu:hover {
+.top__header .rightside .hidden__menu:hover .floating__menu,
+.top__header .rightside .floating__menu:hover {
   opacity: 1;
   visibility: visible;
 }
-.top .header .rightside .hidden__menu {
+.top__header .rightside .hidden__menu {
   display: flex;
 }
-.top .header .rightside .hidden__menu .menu {
-  width: 40px;
-}
-.top .header .rightside .hidden__menu .floating__menu {
+.top__header .rightside .hidden__menu .floating__menu {
   list-style: none;
   padding-left: 32px;
   padding-right: 74px;
@@ -79,7 +76,7 @@ img {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.top .header .rightside .hidden__menu .floating__menu .menu__heading {
+.top__header .rightside .hidden__menu .floating__menu .menu__heading {
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 700;
@@ -87,20 +84,20 @@ img {
   line-height: 17px;
   color: #000000;
 }
-.top .header .rightside .hidden__menu .floating__menu .hidden__category {
+.top__header .rightside .hidden__menu .floating__menu .hidden__category {
   display: grid;
   grid-template-columns: repeat(1, 126px);
   flex-wrap: wrap;
   gap: 20px;
 }
-.top .header .rightside .hidden__menu .floating__menu .category__heading {
+.top__header .rightside .hidden__menu .floating__menu .category__heading {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
 }
-.top .header .rightside .hidden__menu .floating__menu .category__link {
+.top__header .rightside .hidden__menu .floating__menu .category__link {
   padding-left: 21px;
   margin-top: 11px;
   display: flex;
@@ -152,7 +149,7 @@ img {
   top: 280px;
   right: 0px;
 }
-.top .top__contetn {
+.top__contetn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +160,7 @@ img {
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.top .top__contetn .heading {
+.top__contetn .heading {
   padding-top: 290px;
   padding-bottom: 381px;
   display: flex;
@@ -172,393 +169,19 @@ img {
   flex-flow: row wrap;
   gap: 16px;
 }
-.top .top__contetn .brand {
+.top__contetn .brand {
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
   color: #222222;
 }
-.top .top__contetn .luxuri {
+.top__contetn .luxuri {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
   color: #222222;
-}
-
-.cart {
-  display: flex;
-  gap: 128px;
-  padding-top: 96px;
-  padding-bottom: 128px;
-}
-.cart__products {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 652px;
-}
-.cart__products .product__card {
-  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-  display: flex;
-}
-.cart__products .product__card__inform {
-  display: flex;
-  padding: 22px 22px 62px 31px;
-  background: #FFFFFF;
-  gap: 57px;
-}
-.cart__products .product__card__description {
-  gap: 42px;
-  display: flex;
-  flex-direction: column;
-}
-.cart__products .product__card__name {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #222222;
-}
-.cart__products .product__card__tags {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #575757;
-}
-.cart__products .product__card .color__price {
-  color: #F16D7F;
-}
-.cart__products .product__card .quantity {
-  border: 1px solid #EAEAEA;
-  padding: 2px 17px;
-  margin-left: 24px;
-}
-.cart__buttons__container {
-  display: flex;
-  gap: 186px;
-  margin-top: 72px;
-}
-.cart__button {
-  transition: background-color 1s ease-in-out;
-  background-color: #fff;
-  padding: 17px 41px 16px 39px;
-  border: 1px solid #000;
-}
-.cart__button__text {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-}
-.cart__button:hover {
-  background-color: #F16D7F;
-  border-color: #F16D7F;
-}
-.cart__button:hover .cart__button__text {
-  color: #fff;
-}
-.cart .delivery__form {
-  gap: 21px;
-  display: flex;
-  flex-direction: column;
-}
-.cart .delivery__form .form__heading {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222222;
-}
-.cart .delivery__form .input__field {
-  border: 1px solid #000;
-  width: 360px;
-  padding-top: 13px;
-  padding-bottom: 16px;
-  padding-left: 18px;
-}
-.cart .delivery__form .city__name::-moz-placeholder {
-  opacity: 0.5;
-}
-.cart .delivery__form .city__name::placeholder {
-  opacity: 0.5;
-}
-.cart .delivery__form .input__field::-moz-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 16px;
-  color: #222222;
-}
-.cart .delivery__form .input__field::placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 16px;
-  color: #222222;
-}
-.cart .delivery__form .form__button {
-  transition: background-color 1s ease-in-out;
-  border: 1px solid #000;
-  background-color: #fff;
-  padding: 10px 15px 12px 16px;
-  max-width: 107px;
-}
-.cart .delivery__form .form__button__text {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
-  color: #4A4A4A;
-}
-.cart .delivery__form .form__button:hover {
-  background-color: #F16D7F;
-  border-color: #F16D7F;
-}
-.cart .delivery__form .form__button:hover .form__button__text {
-  color: #fff;
-}
-.cart .total {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: 57px;
-  padding: 39px 34px 42px 44px;
-  background: #F5F3F3;
-}
-.cart .total .sub__total {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 13px;
-  color: #4A4A4A;
-}
-.cart .total .grand__total {
-  padding-top: 12px;
-  padding-bottom: 21px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222222;
-}
-.cart .total .grand__total__price {
-  font-weight: 700;
-  color: #F16D7F;
-}
-.cart .total .border {
-  width: 273px;
-  border: 1px solid #E2E2E2;
-}
-.cart .total__button {
-  transition: background-color 1s ease-in-out;
-  margin-top: 17px;
-  border: none;
-  background: #F16D7F;
-  padding: 15px 43px 16px 41px;
-}
-.cart .total__button__text {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-.cart .total__button:hover {
-  background-color: #fff;
-  border: 1px solid #000;
-}
-.cart .total__button:hover .total__button__text {
-  color: #000;
-}
-
-.registration {
-  display: flex;
-  gap: 128px;
-  padding-top: 64px;
-  padding-bottom: 96px;
-}
-.registration .dateField__userName {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.registration .dateField__userName_nameFormFiled {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.registration .dateField__userName_heading {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222222;
-}
-.registration .dateField__userName_nameInput {
-  border: 1px solid #A4A4A4;
-  padding-top: 13px;
-  padding-bottom: 16px;
-  padding-left: 18px;
-}
-.registration .dateField__userName_nameInput::-moz-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__userName_nameInput::placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__userGender {
-  display: flex;
-  padding-top: 31px;
-  padding-bottom: 33px;
-}
-.registration .dateField__userGender_gender {
-  display: none;
-}
-.registration .dateField__userGender .genderCheckbox__text {
-  gap: 10px;
-  padding-right: 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000000;
-}
-.registration .dateField__userGender .genderCheckbox__text::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #A4A4A4;
-  border-radius: 50%;
-  box-sizing: border-box;
-  background-color: #fff;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-.registration .dateField__userGender .dateField__userGender_gender:checked + .genderCheckbox__text::before {
-  background-color: #0cbeef;
-  border-color: #0953e7;
-}
-.registration .dateField__userLogin {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 15px;
-}
-.registration .dateField__userLogin_heading {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222222;
-}
-.registration .dateField__userLogin .loginForm {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.registration .dateField__userLogin_input {
-  border: 1px solid #A4A4A4;
-  padding-top: 13px;
-  padding-bottom: 16px;
-  padding-left: 18px;
-}
-.registration .dateField__userLogin_input::-moz-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__userLogin_input::placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__button {
-  transition: background-color 1s ease-in-out;
-  margin-top: 39px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #F16D7F;
-  background-color: #F16D7F;
-  padding: 16px 29px 20px 29px;
-}
-.registration .dateField__button_text {
-  font-family: "Lato", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
-}
-.registration .dateField__button:hover {
-  background-color: #fff;
-  border: 1px solid #000;
-}
-.registration .dateField__button:hover .dateField__button_text {
-  color: #000;
-}
-.registration .loalty__heading {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-.registration .loalty__text {
-  margin-top: 22px;
-  margin-bottom: 21px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-.registration .loalty__list {
-  list-style-image: url(img/list_marker.png);
-  list-style-position: inside;
-}
-.registration .loalty__list_element {
-  margin-bottom: 16px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
 }
 
 .main__product__info {
@@ -655,6 +278,375 @@ img {
 .main__product__info .main__product__button__container .main__product_button:hover .main__product_button_text {
   color: #fff;
   fill: #fff;
+}
+
+.cart {
+  display: flex;
+  gap: 128px;
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+.cart__products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 652px;
+}
+.cart__products .product__card {
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  display: flex;
+}
+.cart__products .product__card__inform {
+  display: flex;
+  padding: 22px 97px 62px 31px;
+  background: #FFFFFF;
+  gap: 57px;
+}
+.cart__products .product__card__description {
+  gap: 42px;
+  display: flex;
+  flex-direction: column;
+}
+.cart__products .product__card__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+.cart__products .product__card__tags {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+.cart__products .product__card .color__price {
+  color: #F16D7F;
+}
+.cart__products .product__card .quantity {
+  border: 1px solid #EAEAEA;
+  padding: 2px 17px;
+  margin-left: 24px;
+}
+.cart__buttons__container {
+  display: flex;
+  gap: 186px;
+  margin-top: 72px;
+}
+.cart__button {
+  transition: background-color 1s ease-in-out;
+  background-color: #fff;
+  padding: 17px 41px 16px 39px;
+  border: 1px solid #000;
+}
+.cart__button__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.cart__button:hover {
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+}
+.cart__button:hover .cart__button__text {
+  color: #fff;
+}
+.cart .delivery__form {
+  gap: 21px;
+  display: flex;
+  flex-direction: column;
+}
+.cart .delivery__form .form__heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.cart .delivery__form .input__field {
+  border: 1px solid #000;
+  width: 342px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 18px;
+}
+.cart .delivery__form .city__name::-moz-placeholder {
+  opacity: 0.5;
+}
+.cart .delivery__form .city__name::placeholder {
+  opacity: 0.5;
+}
+.cart .delivery__form .input__field::-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+.cart .delivery__form .input__field::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+}
+.cart .delivery__form .form__button {
+  transition: background-color 1s ease-in-out;
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 10px 15px 12px 16px;
+  width: 107px;
+}
+.cart .delivery__form .form__button__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+.cart .delivery__form .form__button:hover {
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+}
+.cart .delivery__form .form__button:hover .form__button__text {
+  color: #fff;
+}
+.cart .total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 57px;
+  padding: 39px 34px 42px 44px;
+  background: #F5F3F3;
+}
+.cart .total .sub__total {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+}
+.cart .total .grand__total {
+  padding-top: 12px;
+  padding-bottom: 21px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.cart .total .grand__total__price {
+  font-weight: 700;
+  color: #F16D7F;
+}
+.cart .total .border {
+  width: 273px;
+  border: 1px solid #E2E2E2;
+}
+.cart .total__button {
+  transition: background-color 1s ease-in-out;
+  margin-top: 17px;
+  border: none;
+  background: #F16D7F;
+  padding: 15px 43px 16px 41px;
+}
+.cart .total__button__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.cart .total__button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.cart .total__button:hover .total__button__text {
+  color: #000;
+}
+
+.registration {
+  display: flex;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration .dateField__userRegistration {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 15px;
+}
+.registration .dateField__userRegistration_nameFormFiled {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration .dateField__userRegistration_heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration .dateField__userRegistration_nameInput {
+  border: 1px solid #A4A4A4;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 18px;
+}
+.registration .dateField__userRegistration_nameInput::-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration .dateField__userRegistration_nameInput::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration .dateField__userRegistration_gender {
+  display: none;
+}
+.registration .dateField__userRegistration .genderCheckbox__text {
+  gap: 10px;
+  padding-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.registration .dateField__userRegistration .genderCheckbox__text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #A4A4A4;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.registration .dateField__userRegistration .dateField__userRegistration_gender:checked + .genderCheckbox__text::before {
+  background-color: #0cbeef;
+  border-color: #0953e7;
+}
+.registration .dateField__userRegistration_heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration .dateField__userRegistration .loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration .dateField__userRegistration_input {
+  border: 1px solid #A4A4A4;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-left: 18px;
+}
+.registration .dateField__userRegistration_input::-moz-placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration .dateField__userRegistration_input::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration .dateField__userLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration .dateField__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration .dateField__button {
+  transition: background-color 1s ease-in-out;
+  margin-top: 39px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #F16D7F;
+  background-color: #F16D7F;
+  padding: 16px 29px 20px 29px;
+}
+.registration .dateField__button_text {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.registration .dateField__button:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.registration .dateField__button:hover .dateField__button_text {
+  color: #000;
+}
+.registration .loalty__heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration .loalty__text {
+  margin-top: 22px;
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration .loalty__list {
+  list-style-image: url(img/list_marker.png);
+  list-style-position: inside;
+}
+.registration .loalty__list_element {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 
 .filter__sort {
@@ -810,6 +802,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 30px;
+  padding-bottom: 48px;
 }
 .products__list .product {
   background: #f8f8f8;
@@ -904,7 +897,6 @@ img {
 }
 
 .list__button {
-  margin-top: 48px;
   margin-bottom: 60px;
   display: flex;
   justify-content: center;
@@ -998,7 +990,7 @@ img {
   align-items: center;
   flex-flow: column wrap;
 }
-.application .application__big__heading {
+.application__big__heading {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -1006,7 +998,7 @@ img {
   text-align: center;
   color: #222224;
 }
-.application .application__heading {
+.application__heading {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1014,13 +1006,13 @@ img {
   text-align: center;
   color: #222224;
 }
-.application .application__button {
+.application__button {
   margin-top: 32px;
   display: flex;
   flex-direction: row;
   font-size: 0;
 }
-.application .application__button .email__button {
+.application__button .email__button {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   padding: 18px 22px;
@@ -1028,14 +1020,14 @@ img {
   border: none;
   background: #e1e1e1;
 }
-.application .application__button .subscribe__button {
+.application__button .subscribe__button {
   padding: 18px 10px;
   border: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #F16D7F;
 }
-.application .application__button .subscribe__button .button_text {
+.application__button .subscribe__button .button_text {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1080,20 +1072,23 @@ img {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
   }
-  .rightside {
-    gap: 0;
+  .top__header .rightside {
+    gap: 40px;
   }
-  .floating__menu {
+  .top .main__product__heading .left__title {
+    padding-top: 59px;
+  }
+  .top__header .rightside .hidden__menu .floating__menu {
     padding-right: 45px;
     max-height: 385px;
   }
-  .menu__heading {
+  .top__header .rightside .hidden__menu .floating__menu .menu__heading {
     line-height: 5px;
   }
-  .category__heading {
+  .top__header .rightside .hidden__menu .floating__menu .category__heading {
     line-height: 7px;
   }
-  .category__link {
+  .top__header .rightside .hidden__menu .floating__menu .category__link {
     line-height: 10px;
   }
   .profi {
@@ -1101,23 +1096,87 @@ img {
     margin-right: 42px;
   }
   .top__contetn {
-    gap: 80px;
+    gap: 40px;
   }
-  .brand__photo {
+  .top__contetn .brand__photo {
     width: 260px;
   }
-  .heading {
+  .top__contetn .heading {
     padding-top: 139px;
     padding-bottom: 138px;
     gap: 16px;
   }
-  .brand {
+  .top__contetn .brand {
     font-size: 44px;
     line-height: 53px;
   }
-  .luxuri {
+  .top__contetn .luxuri {
     font-size: 24px;
     line-height: 29px;
+  }
+  .registration {
+    gap: 22px;
+    padding-top: 40px;
+  }
+  .registration .loalty__heading {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .loalty__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .loalty__list_element {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration .dateField__button {
+    padding-bottom: 17px;
+  }
+  .cart {
+    flex-direction: column;
+  }
+  .cart__products {
+    gap: 64px;
+  }
+  .cart__buttons__container {
+    gap: 48px;
+  }
+  .cart .total {
+    margin-top: 0;
+    padding-bottom: 41px;
+    padding-left: 53px;
+  }
+  .cart .total .border {
+    width: 273px;
+  }
+  .cart .cart__buttons__container {
+    justify-content: center;
+  }
+  .cart .rght__cart__side {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .cart__products .product__card__inform {
+    padding-right: 179px;
+  }
+  .filter__sort {
+    justify-content: space-between;
+  }
+  .filter__sort .sort__container {
+    width: auto;
+  }
+  .main__product__info {
+    padding-right: 63px;
+    padding-left: 63px;
+    bottom: 5px;
+  }
+  .top .previes {
+    top: 186px;
+  }
+  .top .next {
+    top: 186px;
   }
   .category {
     margin-bottom: 110px;
@@ -1131,6 +1190,9 @@ img {
   .products__list {
     grid-template-columns: repeat(2, 360px);
     gap: 16px;
+  }
+  .product3 {
+    display: none;
   }
   .list__button {
     margin-top: 33px;
@@ -1146,7 +1208,7 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .block {
+  .our__strengths .block {
     max-width: 360px;
   }
   .subscribe {
@@ -1185,7 +1247,7 @@ img {
     grid-template-columns: repeat(1, 344px);
     gap: 32px;
   }
-  .item__big {
+  .category .item__big {
     height: 111px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1208,7 +1270,7 @@ img {
     background: #222224;
     gap: 47px;
   }
-  .strength__heading {
+  .our__strengths .strength__heading {
     margin-top: 19px;
     margin-bottom: 15px;
     font-style: normal;
@@ -1218,7 +1280,7 @@ img {
     padding-bottom: 110px;
     gap: 59px;
   }
-  .quot__info {
+  .our__quot .quot__info {
     font-size: 18px;
     line-height: 22px;
   }
@@ -1237,7 +1299,7 @@ img {
   .application__button {
     margin-top: 22px;
   }
-  .email__button {
+  .application__button .email__button {
     width: 180px;
     padding: 18px 22px;
   }
@@ -1245,10 +1307,10 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
-  .copyright {
+  .footer .copyright {
     margin-bottom: 9px;
   }
-  .contacts {
+  .footer .contacts {
     margin-top: 43px;
     margin-bottom: 40px;
   }
@@ -1258,14 +1320,14 @@ img {
     padding-left: calc(50% - 162px);
     padding-right: calc(50% - 162px);
   }
-  .header {
+  .top__header {
     justify-content: space-around;
   }
   .category {
     grid-template-columns: repeat(1, 300px);
     justify-content: center;
   }
-  .subtitel {
+  .products__heading .subtitel {
     font-size: 13px;
   }
   .products__list {

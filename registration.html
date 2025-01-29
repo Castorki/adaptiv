@@ -15,7 +15,7 @@
 
 <body>
     <div class="top">
-        <header class="header center">
+        <header class="top__header center">
             <nav class="leftside">
                 <a href="index.html">
                     <img class="header__navigation" src="img/logo.svg" alt="logo">
@@ -59,11 +59,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="#">
-                    <img class="header__navigation profi" src="img/profi.svg" alt="profile">
+                <a class="profi" href="#">
+                    <img class="header__navigation " src="img/profi.svg" alt="profile">
                 </a>
-                <a href="#">
-                    <img class="header__navigation backet" src="img/backet.svg" alt="backet">
+                <a class="backet" href="#">
+                    <img class="header__navigation " src="img/backet.svg" alt="backet">
                 </a>
             </nav>
         </header>
@@ -73,28 +73,20 @@
     </div>
     <main class="registration center">
         <div class="dateField">
-            <div class="dateField__userName">
-                <h2 class="dateField__userName_heading">Your Name</h2>
-                <form class="dateField__userName_nameFormFiled" action="#">
-                    <input class="dateField__userName_nameInput" type="text" placeholder="First Name">
-                    <input class="dateField__userName_nameInput" type="text" placeholder="Last Name">
-                </form>
-            </div>
-            <div class="dateField__userGender">
-                <input class="dateField__userGender_gender" type="checkbox" id="maleCheckbox">
+            <form class="dateField__userRegistration">
+                <h2 class="dateField__userRegistration_heading">Your Name</h2>
+                <input class="dateField__userRegistration_nameInput" type="text" placeholder="First Name">
+                <input class="dateField__userRegistration_nameInput" type="text" placeholder="Last Name">
+                <input class="dateField__userRegistration_gender" type="radio" id="maleCheckbox">
                 <label class="genderCheckbox__text" for="maleCheckbox">Male</label>
-                <input class="dateField__userGender_gender" type="checkbox" id="femaleCheckbox">
+                <input class="dateField__userRegistration_gender" type="radio" id="femaleCheckbox">
                 <label class="genderCheckbox__text" for="femaleCheckbox">Female</label>
-                <input class="dateField__userGender_gender" type="checkbox" id="otherCheckbox">
+                <input class="dateField__userRegistration_gender" type="radio" id="otherCheckbox">
                 <label class="genderCheckbox__text" for="otherCheckbox">Other</label>
-            </div>
-            <div class="dateField__userLogin">
-                <h2 class="dateField__userLogin_heading">Login details</h2>
-                <form class="loginForm" action="#">
-                    <input type="email" class="dateField__userLogin_input" placeholder="Email">
-                    <input type="password" class="dateField__userLogin_input" placeholder="Password">
-                </form>
-            </div>
+                <h2 class="dateField__userRegistration_heading">Login details</h2>
+                <input type="email" class="dateField__userRegistration_input" placeholder="Email">
+                <input type="password" class="dateField__userRegistration_input" placeholder="Password">
+            </form>
             <p class="dateField__text">
                 Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
             </p>
