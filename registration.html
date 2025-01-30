@@ -73,19 +73,24 @@
     </div>
     <main class="registration center">
         <div class="dateField">
-            <form class="dateField__userRegistration">
+            <form class="dateField__userRegistration" action="#">
                 <h2 class="dateField__userRegistration_heading">Your Name</h2>
-                <input class="dateField__userRegistration_nameInput" type="text" placeholder="First Name">
-                <input class="dateField__userRegistration_nameInput" type="text" placeholder="Last Name">
-                <input class="dateField__userRegistration_gender" type="radio" id="maleCheckbox">
-                <label class="genderCheckbox__text" for="maleCheckbox">Male</label>
-                <input class="dateField__userRegistration_gender" type="radio" id="femaleCheckbox">
-                <label class="genderCheckbox__text" for="femaleCheckbox">Female</label>
-                <input class="dateField__userRegistration_gender" type="radio" id="otherCheckbox">
-                <label class="genderCheckbox__text" for="otherCheckbox">Other</label>
+                <input class="dateField__userRegistration_input" type="text" placeholder="First Name">
+                <input class="dateField__userRegistration_input" type="text" placeholder="Last Name">
+                <div class="dateField__userRegistration_genderContainer">
+                        <input class="dateField__userRegistration_gender" type="radio" name="genderChoice"
+                            id="maleCheckbox">
+                        <label class="genderRadio__text" for="maleCheckbox">Male</label>
+                        <input class="dateField__userRegistration_gender" type="radio" name="genderChoice"
+                            id="femaleCheckbox">
+                        <label class="genderRadio__text" for="femaleCheckbox">Female</label>
+                        <input class="dateField__userRegistration_gender" type="radio" name="genderChoice"
+                            id="otherCheckbox">
+                        <label class="genderRadio__text" for="otherCheckbox">Other</label>
+                </div>
                 <h2 class="dateField__userRegistration_heading">Login details</h2>
-                <input type="email" class="dateField__userRegistration_input" placeholder="Email">
-                <input type="password" class="dateField__userRegistration_input" placeholder="Password">
+                <input class="dateField__userRegistration_input" type="email" placeholder="Email">
+                <input class="dateField__userRegistration_input" type="password" placeholder="Password">
             </form>
             <p class="dateField__text">
                 Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters

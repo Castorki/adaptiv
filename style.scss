@@ -561,83 +561,12 @@ img {
             gap: 20px;
             padding-bottom: 15px;
 
-            &_nameFormFiled {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-
             &_heading {
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
                 color: #222222;
-            }
-
-            &_nameInput {
-                border: 1px solid #A4A4A4;
-                padding-top: 13px;
-                padding-bottom: 16px;
-                padding-left: 18px;
-            }
-
-            &_nameInput::placeholder {
-                font-family: 'Lato';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 16px;
-                color: #B1B1B1;
-            }
-
-            &_gender {
-                display: none;
-            }
-
-            .genderCheckbox__text {
-                gap: 10px;
-                padding-right: 20px;
-                position: relative;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 11px;
-                line-height: 13px;
-                color: #000000;
-            }
-
-            .genderCheckbox__text::before {
-                content: '';
-                display: inline-block;
-                width: 16px;
-                height: 16px;
-                border: 1px solid #A4A4A4;
-                border-radius: 50%;
-                box-sizing: border-box;
-                background-color: #fff;
-                transition: background-color 0.3s, border-color 0.3s;
-            }
-
-            .dateField__userRegistration_gender:checked+.genderCheckbox__text::before {
-                background-color: #0cbeef;
-                border-color: #0953e7;
-            }
-
-            &_heading {
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
-                color: #222222;
-            }
-
-            .loginForm {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
             }
 
             &_input {
@@ -656,12 +585,47 @@ img {
                 line-height: 16px;
                 color: #B1B1B1;
             }
-        }
 
-        &__userLogin {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            &_genderContainer {
+                display: flex;
+                padding-top: 11px;
+                padding-bottom: 13px;
+            }
+
+            &_gender {
+                display: none;
+            }
+
+            .genderRadio__text {
+                gap: 10px;
+                padding-right: 20px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #000000;
+            }
+
+            .genderRadio__text::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border: 1px solid #A4A4A4;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-color: #fff;
+                transition: background-color 0.3s, border-color 0.3s;
+            }
+
+            .dateField__userRegistration_gender:checked+.genderRadio__text::before {
+                background-color: #0cbeef;
+                border-color: #0953e7;
+            }
 
 
 

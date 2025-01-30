@@ -485,82 +485,12 @@ img {
   gap: 20px;
   padding-bottom: 15px;
 }
-.registration .dateField__userRegistration_nameFormFiled {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 .registration .dateField__userRegistration_heading {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-}
-.registration .dateField__userRegistration_nameInput {
-  border: 1px solid #A4A4A4;
-  padding-top: 13px;
-  padding-bottom: 16px;
-  padding-left: 18px;
-}
-.registration .dateField__userRegistration_nameInput::-moz-placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__userRegistration_nameInput::placeholder {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #B1B1B1;
-}
-.registration .dateField__userRegistration_gender {
-  display: none;
-}
-.registration .dateField__userRegistration .genderCheckbox__text {
-  gap: 10px;
-  padding-right: 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000000;
-}
-.registration .dateField__userRegistration .genderCheckbox__text::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #A4A4A4;
-  border-radius: 50%;
-  box-sizing: border-box;
-  background-color: #fff;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-.registration .dateField__userRegistration .dateField__userRegistration_gender:checked + .genderCheckbox__text::before {
-  background-color: #0cbeef;
-  border-color: #0953e7;
-}
-.registration .dateField__userRegistration_heading {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222222;
-}
-.registration .dateField__userRegistration .loginForm {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 .registration .dateField__userRegistration_input {
   border: 1px solid #A4A4A4;
@@ -584,10 +514,41 @@ img {
   line-height: 16px;
   color: #B1B1B1;
 }
-.registration .dateField__userLogin {
+.registration .dateField__userRegistration_genderContainer {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+.registration .dateField__userRegistration_gender {
+  display: none;
+}
+.registration .dateField__userRegistration .genderRadio__text {
+  gap: 10px;
+  padding-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.registration .dateField__userRegistration .genderRadio__text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #A4A4A4;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.registration .dateField__userRegistration .dateField__userRegistration_gender:checked + .genderRadio__text::before {
+  background-color: #0cbeef;
+  border-color: #0953e7;
 }
 .registration .dateField__text {
   font-style: normal;
